@@ -10,9 +10,9 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark pd-2">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-3 mb-5">
       <Link className="navbar-brand" to="/">
-        Asociaciones
+        Heroes App
       </Link>
 
       <div className="navbar-collapse">
