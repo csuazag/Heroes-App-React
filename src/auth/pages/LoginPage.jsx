@@ -10,7 +10,9 @@ export const LoginPage = () => {
   const handleLogin = () => {
     login("Camilo Suaza");
 
-    navigate("/", { replace: true });
+    const lastPath = localStorage.getItem("lastPath") || "/";
+
+    navigate(lastPath, { replace: true });
   };
 
   return (
