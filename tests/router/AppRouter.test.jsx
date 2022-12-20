@@ -20,13 +20,13 @@ describe("Test on  <AppRouter />", () => {
     expect(screen.getAllByText("Login").length).toBe(2);
   });
 
-  test('should show the marvel component if the user is authenticated', () => { 
+  test("should show the marvel component if the user is authenticated", () => {
     const contextValue = {
       logged: true,
       user: {
-        name: 'Camilo'
+        name: "Camilo",
         id: 123,
-      }
+      },
     };
 
     render(
@@ -37,6 +37,6 @@ describe("Test on  <AppRouter />", () => {
       </MemoryRouter>
     );
 
-    expect(screen.getAllByText("Marvel").length).toBeGreaterThanOrEqual(1)
-   })
+    expect(screen.getAllByText("Marvel").length).toBeGreaterThanOrEqual(1);
+  });
 });
