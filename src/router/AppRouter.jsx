@@ -1,8 +1,6 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { LoginPage } from "../auth/pages";
 import { HeoresRoutes } from "../heroes";
-import { DcPage, MarvelPage } from "../heroes/pages";
-import { Navbar } from "../ui";
 import { PrivateRoute } from "./PrivateRoute";
 import { PublicRoute } from "./PublicRoute";
 
